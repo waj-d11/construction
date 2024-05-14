@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+section {
+    padding: 5rem 10%;
+}
+
+.heading {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    color: #111;
+    text-transform: capitalize;
+    padding-left: 1rem;
+    border-left: 1rem solid#f5bf23;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    background: #f5bf23;
+    color: #111;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 1.5rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background: #fff;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: #111;
+    text-transform: capitalize;
+}
+
+.header .logo span {
+    color: #f5bf23;
+}
+
+.header .navbar #close-navbar {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: #2a201c;
+    display: none;
+}
+
+.header .navbar a {
+    font-size: 2rem;
+    color: #111;
+    text-transform: capitalize;
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover {
+    color: #f5bf23;
+}
+
+.header .icons div {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: #eee;
+    color: #111;
+    cursor: pointer;
+    text-align: center;
+    margin-left: .3rem;
+}
+
+.header .icons div:hover {
+    background: #111;
+    color: #fff;
+}
+
+.header #menu-btn {
+    display: none;
+}
+
+.home {
+    padding: 0;
+}
+
+.home .slide {
+    min-height: 60rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.home .slide .content {
+    width: 50rem;
+    position: relative;
+}
+
+.home .slide .content h3 {
+    font-size: 6rem;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.home .slide .content p {
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.about .row .video video {
+    width: 100%;
+}
+
+.about .row .content h3 {
+    font-size: 3.5rem;
+    color: #111;
+    text-transform: capitalize;
+}
+
+.about .row .content p {
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.pricing {
+    background: #eee;
+}
+
+.pricing .box-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.pricing .box-container .box {
+    background: #fff;
+    text-align: center;
+    padding: 2rem;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.pricing .box-container .box i {
+    font-size: 3rem;
+    height: 7rem;
+    width: 7rem;
+    line-height: 7rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    background: #f5bf23;
+    color: #111;
+}
+
+.pricing .box-container .box h3 {
+    font-size: 2rem;
+    color: #111;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+.pricing .box-container .box .price {
+    padding: 1rem 0;
+    font-size: 5rem;
+    color: #111;
+    text-transform: capitalize;
+}
+
+.pricing .box-container .box .price span {
+    font-size: 2rem;
+}
+
+.pricing .box-container .box .list {
+    padding: 1rem 0;
+}
+
+.pricing .box-container .box .list p {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 2;
+}
+
+.services {
+    background: #eee;
+}
+
+.services .box-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.services .box-container .box {
+    text-align: center;
+    padding: 3rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+}
+
+.services .box-container .box img {
+    height: 7rem;
+    margin-bottom: .5rem;
+    transition: .2s linear;
+}
+
+.services .box-container .box h3 {
+    font-size: 1.7rem;
+    color: #111;
+    text-transform: capitalize;
+    padding: 1rem 0;
+}
+
+.services .box-container .box p {
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 2;
+}
+
+.contact {
+    background: #111;
+}
+
+.contact .heading {
+    color: #fff;
+}
+
+.contact .row form {
+    background: #fff;
+    padding: 2rem;
+}
+
+.contact .row form h3 {
+    font-size: 2.5rem;
+    color: #111;
+    text-transform: capitalize;
+}
+
+.contact .row form .box {
+    margin: .7rem 0;
+    width: 100%;
+    padding: 1.5rem 0;
+    border-bottom: .1rem solid rgba(0, 0, 0, .3);
+    font-size: 1.6rem;
+    color: #666;
+}
+
+.contact .row form .box:focus {
+    border-color: #f5bf23;
+}
+
+.contact .row form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 1.5rem 2rem;
+    }
+    section {
+        padding: 3rem 5%;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    section {
+        padding: 3rem 2rem;
+    }
+    .header #menu-btn {
+        display: inline-block;
+    }
+    .header .navbar {
+        position: fixed;
+        top: 0;
+        right: -105%;
+        width: 30rem;
+        background: #fff;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        z-index: 1200;
+    }
+    .header .navbar #close-navbar {
+        display: block;
+    }
+    .header .navbar.active {
+        right: 0;
+    }
+    .header .navbar a {
+        display: block;
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home .slide {
+        justify-content: center;
+    }
+    .home .slide .content {
+        text-align: center;
+    }
+    .home .slide .content h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .about .row .content h3 {
+        font-size: 2.5rem;
+    }
+}
